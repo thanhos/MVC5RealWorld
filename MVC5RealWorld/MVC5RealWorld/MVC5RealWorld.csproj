@@ -99,6 +99,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Models\DB\DemoModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -110,10 +113,24 @@
       <DependentUpon>DemoModel.edmx</DependentUpon>
       <LastGenOutput>DemoModel.cs</LastGenOutput>
     </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -144,6 +161,7 @@
     <Compile Include="Models\DB\SYSUserRole.cs">
       <DependentUpon>DemoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EntityManager\UserManager.cs" />
     <Compile Include="Models\ViewModel\UserSignUpView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +175,10 @@
     <Content Include="Models\DB\DemoModel.edmx.diagram">
       <DependentUpon>DemoModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Welcome.cshtml" />
+    <Content Include="Views\Account\SignUp.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -166,8 +188,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\EntityManager\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
